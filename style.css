@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  font-size: 28px;
+
+  background: linear-gradient(196.69deg, #f7d1e4 0%, #f89393 96.99%);
+}
+
+section {
+  position: relative;
+  margin-block: 10vh;
+}
+
+.container {
+  max-width: 350px;
+  margin-inline: auto;
+
+  padding: 22px 16px;
+
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 2px 3px 4px rgba(184, 126, 126, 0.25);
+  backdrop-filter: blur(6px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 22px;
+}
+
+#display {
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 2px 3px 4px rgba(184, 126, 126, 0.25);
+  border-radius: 22px;
+  border: none;
+
+  height: 70px;
+
+  text-align: right;
+  line-height: 70px;
+  padding: 16px 16px;
+  width: 100%;
+  margin-bottom: 10px;
+
+  font-size: 32px;
+  font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.buttons {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  /* border: 1px black solid; */
+  /* border-left: 1px black solid; */
+}
+
+.button {
+  border: 0.5px;
+
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 2px 3px 4px rgba(184, 126, 126, 0.25);
+  border-radius: 22px;
+
+  text-align: center;
+  line-height: 75px;
+
+  cursor: pointer;
+}
+
+#equal {
+  background: rgba(255, 237, 192, 0.8);
+}
+
+#equal:hover {
+  background: rgba(248, 147, 147, 0.8);
+  color: white;
+}
+
+.button:hover {
+  transition: 0.2s ease-in-out;
+  transform: scale(1.1);
+
+  box-shadow: 1px 4px 18px 3px rgba(248, 147, 147, 0.8);
+}
+
+svg {
+  position: absolute;
+
+  z-index: -1;
+}
+
+svg.first-ball {
+  right: 35px;
+  top: 80px;
+
+  margin: auto;
+}
+
+svg.second-ball{
+  bottom: 10px;
+}
